@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!--
+    - Fluxo de Layout
+
+    O fluxo do layout no HTML ocorre conforme o modo de escrita definido. Por padrão, de cima para baixo da esquerda para a direita.
+
+    - span
+
+    Tag genérica que não possui nenhum estilo pré-definido/semântica. É equivalente a uma div, mas sem o display block.
+    -->
+
+    Texto direto no Body
+    <a href="/">Texto no link</a>
+    <span>Texto no Span</span>
+    <div>Texto na Div</div>
+    Texto direto no Body 2
+    <a href="/">Texto no link 2</a>
+    <span>Texto no Span 2</span>
+
+    <div>
+      --------------------------------------------------------------------------------
+    </div>
+
+    <!--
+    - Display inline e block
+
+    Define como a caixa (box model) irá se comportar.
+
+    - inline
+
+    Respeita o fluxo da escrita sem iniciar uma nova linha, não é possível definir valores de width, height, margin (top/bottom) e etc. É o estilo padrão.
+
+    - block
+
+    Inicia uma nova linha e não permite que outros elementos sejam posicionados em sua linha. Aceita todas as propriedades do box model. Estilo inicial de elementos como h1, p, div e outros.
+    -->
+
+    <h1>H1 Block</h1>
+    <a href="/">Link Inline</a>
+    <span>Span Inline</span>
+    <strong>Strong inline</strong>
+    <p>P Block</p>
+    <p>Esse é um texto com um <span>elemento inline</span> dentro dele.</p>
+    <div>
+      Esse é um texto com um
+      <div>elemento block</div>
+      dentro dele.
+    </div>
+
+    <div>
+      --------------------------------------------------------------------------------
+    </div>
+
+    <!--
+    - none e inline-block
+    - none
+
+    Remove o elemento completamente da tela.
+
+    - inline-block
+
+    O elemento continua inline, mas passa a receber as propriedades do box model.
+    -->
+
+    <div class="esconde">Esse elemento não aparece.</div>
+    <div>
+      Acesso o meu <a href="/" class="inlineblock">link inline-block</a> aqui.
+    </div>
+    <div>Novo elemento de bloco</div>
+    <div>Acesse o meu <a href="/">link inline</a> aqui.</div>
+    <div>Novo elemento de bloco</div>
+  </body>
+</html>
